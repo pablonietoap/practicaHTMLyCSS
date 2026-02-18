@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: rgba(10, 10, 30, 0.95);
+  color: whitesmoke;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+/* CABECERA FIJA */
+#cabecera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 30, 0.95);
+  color: whitesmoke;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px rgba(10, 10, 30, 0.95);
+  align-items: center;
+}
+
+.logoTitulo {
+  display: flex;
+}
+
+.logoImagen {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.subtituloCabecera {
+  color: whitesmoke;
+}
+
+#menuNavegacion {
+  margin-top: 5px;
+}
+
+.menuPrincipal {
+  list-style: none;
+  display: flex;
+}
+
+.menuPrincipal li {
+  margin-right: 20px;
+}
+
+.menuPrincipal li {
+  position: relative;
+}
+
+.menuPrincipal a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition:
+    linear 0.2s;
+}
+
+.menuPrincipal a:hover {
+  background: #e94560;
+  transform: translateY(-2px);
+}
+
+.menuPadreSecciones .submenuSecciones {
+  list-style: none;
+  position: absolute;
+  background: rgba(10, 10, 30, 0.95);
+  min-width: 160px;
+  display: none;
+}
+
+.menuPadreSecciones:hover .submenuSecciones {
+  display: block;
+}
+
+.submenuSecciones li a {
+  display: block;
+}
+
+/* PIE DE PÁGINA FIJO */
+#piePagina {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 30, 0.95);
+  color: whitesmoke;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+}
+
+#piePagina a {
+  color: #e94560;
+}
+
+.publiLateral {
+  position: absolute;
+  top: 130px;
+  width: 180px;
+  background: rgba(15, 15, 40, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e94560;
+}
+
+.publiIzquierda {
+  left: 10px;
+}
+
+.publiDerecha {
+  right: 10px;
+}
+
+.tituloPublicidad {
+  font-size: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.imagenPublicidad {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+#contenidoPrincipal {
+  width: 60%;
+  margin: 50px auto;
+  background: rgba(20, 20, 50, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 3px 3px rgba(10, 10, 30, 0.95);
+}
+
+.seccionGrande,
+.seccionVideo,
+.seccionLista {
+  margin-bottom: 25px;
+}
+
+.imagenContenido {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.imagenZoom {
+  transition:
+    linear 0.2s,
+}
+
+.imagenZoom:hover {
+  transform: scaleX(1.05);
+  box-shadow: 3px 3px 3px red;
+}
+
+.videoRetro {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+
+.listaRetro {
+  list-style: none;
+}
+
+.listaRetro li {
+  margin-bottom: 10px;
+  background-image: url("../img/cartucho.png");
+  }
