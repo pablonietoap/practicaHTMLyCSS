@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alta de usuario</title>
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/alta.css" />
+  </head>
+  <body>
+    <header id="cabecera">
+      <div class="logoTitulo">
+        <img
+          src="../img/imagenRetro.jpeg"
+          alt="Logo Retro"
+          class="logoImagen"
+        />
+        <div>
+          <h1>Videojuegos Retro</h1>
+          <p class="subtituloCabecera">Un viaje a la historia del gaming</p>
+        </div>
+      </div>
+
+      <nav id="menuNavegacion">
+        <ul class="menuPrincipal">
+          <li><a href="../index.html">Inicio</a></li>
+          <li class="menuPadreSecciones">
+            <a href="#">Secciones</a>
+            <ul class="submenuSecciones">
+              <li><a href="alta.html">Alta de usuario</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+              <li><a href="coleccion.html">Colección</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://classicgamezone.com/es" target="_blank"
+              >Juegos Retro</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fanisetas.com/blog/emuladores-online/"
+              target="_blank"
+            >
+              Mejores Emuladores
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenidoPrincipal">
+      <h2>Alta de usuario</h2>
+      <p>Introduce tus datos para completar el registro.</p>
+      <form class="formulario" action="../index.html" method="post">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label>Nombre: <input type="text" name="nombre" required /> </label>
+          <label
+            >Apellidos: <input type="text" name="apellidos" required />
+          </label>
+          <label
+            >DNI:
+            <input
+              type="text"
+              name="dni"
+              pattern="[0-9]{8}[A-Z]"
+              placeholder="12345678A"
+              required
+            />
+          </label>
+          <label
+            >Dirección:
+            <input
+              type="text"
+              name="direccion"
+              placeholder="C/Ejemplo Nº12 P3"
+              pattern="C/[A-z ]+ Nº[0-9]+ P[A-z0-9]+"
+              required
+            />
+          </label>
+          <label>Ciudad: <input type="text" name="ciudad" required /> </label>
+          <label
+            >Código postal:
+            <input list="cp" name="codPostal" pattern="[0-9]{5}" required />
+            <datalist id="cp">
+              <option value="37001"></option>
+              <option value="37002"></option>
+              <option value="37003"></option>
+              <option value="37004"></option>
+              <option value="37005"></option>
+            </datalist>
+          </label>
+          <label>País: <input type="text" name="pais" required /> </label>
+          <label
+            >Fecha de nacimiento (opcional): <input type="date" name="fecha" />
+          </label>
+          <label
+            >Email (opcional):
+            <input type="email" name="email" placeholder="correo@correo.es" />
+          </label>
+          <label
+            >Contraseña:
+            <input
+              type="password"
+              name="contraseña"
+              pattern="_[A-z]{1,7}_[A-z0-9]{5}&[0-9]{2}"
+              placeholder="Ej: _Ejemplo_abc12&34"
+              required
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Sexo</legend>
+          <label><input type="radio" name="sexo" /> Hombre</label>
+          <label><input type="radio" name="sexo" /> Mujer</label>
+          <label><input type="radio" name="sexo" required /> Otro</label>
+        </fieldset>
+        <fieldset>
+          <legend>Aficiones</legend>
+          <label><input type="checkbox" /> Arcade</label>
+          <label><input type="checkbox" /> Plataformas</label>
+          <label><input type="checkbox" /> RPG</label>
+          <label><input type="checkbox" /> Lucha</label>
+          <label
+            >Otra: <input type="text" placeholder="Especifica..." />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Foto de perfil (opcional)</legend>
+          <input type="file" />
+        </fieldset>
+        <div class="botones">
+          <button type="reset" class="botonIndividual">Borrar</button>
+          <button type="submit" class="botonIndividual">Enviar</button>
+          <a href="../index.html" class="botonIndividual">Cancelar</a>
+        </div>
+      </form>
+    </main>
+
+    <footer id="piePagina">
+      <address>
+        Contacto:
+        <a href="mailto:videojuegosRetro@gmail.com"
+          >videojuegosRetro@gmail.com</a
+        >
+        · Salamanca, España
+      </address>
+    </footer>
+  </body>
+</html>
