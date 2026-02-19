@@ -8,6 +8,7 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: rgba(10, 10, 30, 0.95);
   color: whitesmoke;
+  position: relative;
   padding-top: 90px;
   padding-bottom: 60px;
 }
@@ -18,13 +19,14 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(10, 10, 30, 0.95);
+  background: rgb(10, 10, 30);
   color: whitesmoke;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 3px 3px rgba(10, 10, 30, 0.95);
   align-items: center;
+  box-shadow: 3px 3px rgba(10, 10, 30, 0.95);
+  z-index: 1;
 }
 
 .logoTitulo {
@@ -42,16 +44,15 @@ body {
 }
 
 #menuNavegacion {
-  margin-top: 5px;
+  background: rgba(10, 10, 30, 0.95);
+  padding: 10px;
 }
 
 .menuPrincipal {
   list-style: none;
   display: flex;
-}
-
-.menuPrincipal li {
-  margin-right: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .menuPrincipal li {
@@ -63,7 +64,7 @@ body {
   color: whitesmoke;
   padding: 6px 10px;
   border-radius: 4px;
-  transition: linear 0.2s;
+  transition: 0.2s;
 }
 
 .menuPrincipal a:hover {
@@ -71,7 +72,7 @@ body {
   transform: translateY(-2px);
 }
 
-.menuPadreSecciones .submenuSecciones {
+.submenuSecciones {
   list-style: none;
   position: absolute;
   background: rgba(10, 10, 30, 0.95);
@@ -87,7 +88,7 @@ body {
   display: block;
 }
 
-/* PIE DE PÁGINA FIJO */
+/* PIE FIJO */
 #piePagina {
   position: fixed;
   bottom: 0;
@@ -98,6 +99,7 @@ body {
   text-align: center;
   padding: 12px;
   font-size: 15px;
+  z-index: 1;
 }
 
 #piePagina a {
@@ -106,18 +108,19 @@ body {
 
 .publiLateral {
   position: absolute;
-  top: 130px;
+  top: 140px;
+  bottom: 60px;
   width: 180px;
-  bottom: 50px;
-  background: rgba(15, 15, 40, 0.9);
+  background: rgba(15, 15, 40, 0.95);
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #e94560;
+  overflow: auto;
 }
 
 .publiLateral:hover {
   box-shadow: 3px 3px 3px red;
-  transform: scaleY(1.05);
+  transform: scaleX(1.05);
   transition: 0.4s;
 }
 
@@ -143,11 +146,11 @@ body {
 
 #contenidoPrincipal {
   width: 60%;
-  margin: 50px auto 0px auto;
+  margin: auto;
+  margin-top: 10px;
   background: rgba(20, 20, 50, 0.9);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 3px 3px rgba(10, 10, 30, 0.95);
 }
 
 .seccionGrande,
@@ -162,7 +165,7 @@ body {
 }
 
 .imagenZoom {
-  transition: linear 0.2s;
+  transition: 0.2s;
 }
 
 .imagenZoom:hover {
