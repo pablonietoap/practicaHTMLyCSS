@@ -25,7 +25,7 @@
 
 .anuncios {
   display: flex;
-  gap: 300px;
+  gap: 200px;
   text-align: center;
   margin: 30px;
 }

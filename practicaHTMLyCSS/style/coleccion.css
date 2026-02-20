@@ -1,0 +1,76 @@
+#contenidoColeccion {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  background: rgba(20, 20, 50, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e94560;
+  color: whitesmoke;
+}
+
+#contenidoColeccion h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.contenedorImagenes {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 200px;
+}
+
+.imagenPuesta {
+  width: 40%;
+  border-radius: 12px;
+  border: 3px solid #e94560;
+  animation: zoom 3s infinite alternate;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.tablaColeccion {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tablaColeccion th,
+.tablaColeccion td {
+  border: 1px solid #e94560;
+  padding: 10px;
+  text-align: center;
+}
+
+.tablaColeccion th {
+  background: rgba(233, 69, 96, 0.3);
+  font-weight: bold;
+}
+
+.volver {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botonVolver {
+  padding: 15px;
+  background: #e94560;
+  color: whitesmoke;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botonVolver:hover {
+  background: red;
+  transform: translateY(-2px);
+}
